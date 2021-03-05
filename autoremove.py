@@ -36,3 +36,5 @@ def rwp(filename="autoremove.bat", remove=False, output=True): #stands for remov
                 print("\nERROR\nwithout output of the command you cannot response to the command\ninvalide option")
             else:
                 print("\nERROR\n")
+    else:
+        print("Unsupported OS")
