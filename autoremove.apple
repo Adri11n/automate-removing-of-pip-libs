@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+python -m pip freeze > requirements.txt
+if [ $1 = "y" ]; then
+	python -m pip uninstall -r requirements.txt -y
+else
+	python -m pip uninstall -r requirements.txt
+fi
+rm requirements.txt
+clear
+python -m pip list
