@@ -1,10 +1,10 @@
 #!/usr/bin/bash
-echo "python3 -m pip3 freeze > requirements.txt"
+python3 -m pip3 freeze > requirements.txt
 if [ $1 = "y" ]; then
-	echo "python3 -m pip3 uninstall -r requirements.txt -y"
+	python3 -m pip3 uninstall -r requirements.txt -y
 else
-	echo "python3 -m pip3 uninstall -r requirements.txt"
+	python3 -m pip3 uninstall -r requirements.txt
 fi
-echo "rm requirements.txt"
-echo "clear"
-echo "python3 -m pip3 list"
+rm requirements.txt
+clear
+python3 -m pip3 list
